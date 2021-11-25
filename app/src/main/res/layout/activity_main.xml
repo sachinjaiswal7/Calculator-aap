@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+   <TextView
+
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:layout_margin="0.5dp"
+       android:background="@color/white"
+       android:hint="NO.1"
+       android:gravity="end"
+       android:id="@+id/tv1"
+       android:ellipsize="start"
+       android:inputType="number"
+       android:singleLine="true"
+       android:textSize="40sp"
+       android:textColor="@color/black">
+
+
+   </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:hint="NO.2"
+        android:layout_margin="0.5dp"
+        android:textSize="40sp"
+        android:inputType="number"
+        android:gravity="end"
+        android:id="@+id/tv2"
+        android:ellipsize="start"
+        android:singleLine="true"
+        />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:textColor="@color/white"
+           android:id="@+id/ans"
+           android:ellipsize="end"
+           android:gravity="bottom|right"
+           android:layout_margin="0.5dp"
+
+           android:textSize="30sp"
+
+
+
+           />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+
+            >
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:id="@+id/rdgroup1"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="NO.1"
+                    android:onClick="numberchooser"
+                    android:layout_margin="0.5dp"
+
+                    android:textSize="22sp"
+                    android:id="@+id/number1"
+                    android:checked="true"
+
+                    android:background="@color/white"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/number2"
+                    android:onClick="numberchooser"
+                    android:layout_margin="0.5dp"
+                    android:textSize="22sp"
+
+                    android:text="NO.2"
+
+                    android:background="@color/white"/>
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:id="@+id/rdgroup2"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="#52545C"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="*"
+                    android:onClick="signchooser"
+                    android:textColor="@color/white"
+                    android:layout_margin="0.5dp"
+                    android:id="@+id/product"
+                    android:checked="true"
+
+
+                    android:textSize="30sp"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:layout_margin="0.5dp"
+                    android:onClick="signchooser"
+                    android:id="@+id/substract"
+                    android:textSize="30sp"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:id="@+id/addition"
+                    android:layout_margin="0.5dp"
+                    android:textColor="@color/white"
+                    android:onClick="signchooser"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    android:textSize="30sp"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:textColor="@color/white"
+                    android:layout_width="0dp"
+                    android:id="@+id/division"
+                    android:layout_margin="0.5dp"
+                    android:onClick="signchooser"
+                    android:layout_height="match_parent"
+                    android:text="/"
+                    android:textSize="30sp"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+        style="@style/actionButton"
+            android:gravity="center"
+        android:text="CLEAR"
+        android:id="@+id/clear"
+        />
+        <TextView
+            style="@style/actionButton"
+            android:gravity="center"
+            android:text="BACK"
+            android:id="@+id/back"
+            />
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+<TextView
+  style="@style/numberButton"
+    android:text="7"
+    android:gravity="center"
+    android:id="@+id/seven"/>
+        <TextView
+            style="@style/numberButton"
+            android:text="8"
+            android:gravity="center"
+            android:id="@+id/eight"/>
+        <TextView
+            style="@style/numberButton"
+            android:text="9"
+            android:gravity="center"
+            android:id="@+id/nine"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+         style="@style/numberButton"
+            android:text="4"
+            android:gravity="center"
+            android:id="@+id/four"
+            />
+        <TextView
+            style="@style/numberButton"
+            android:text="5"
+            android:gravity="center"
+            android:id="@+id/five"
+            />
+        <TextView
+            style="@style/numberButton"
+            android:text="6"
+            android:gravity="center"
+            android:id="@+id/six"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+           style="@style/numberButton"
+            android:layout_weight="1"
+            android:text="1"
+            android:gravity="center"
+            android:id="@+id/one"
+            />
+        <TextView
+            style="@style/numberButton"
+            android:layout_weight="1"
+            android:text="2"
+            android:gravity="center"
+            android:id="@+id/two"
+            />
+        <TextView
+            style="@style/numberButton"
+            android:layout_weight="1"
+            android:text="3"
+            android:gravity="center"
+            android:id="@+id/three"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+           style="@style/numberButton"
+           android:id="@+id/decimal"
+            android:gravity="center"
+
+            android:text="."/>
+
+        <TextView
+            android:id="@+id/zero"
+            style="@style/numberButton"
+            android:gravity="center"
+
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/equals"
+            style="@style/numberButton"
+            android:gravity="center"
+
+            android:text="="/>
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
