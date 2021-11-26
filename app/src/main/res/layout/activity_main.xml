@@ -78,7 +78,6 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="NO.1"
-                    android:onClick="numberchooser"
                     android:layout_margin="0.5dp"
 
                     android:textSize="22sp"
@@ -91,7 +90,6 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:id="@+id/number2"
-                    android:onClick="numberchooser"
                     android:layout_margin="0.5dp"
                     android:textSize="22sp"
 
@@ -111,7 +109,6 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="*"
-                    android:onClick="signchooser"
                     android:textColor="@color/white"
                     android:layout_margin="0.5dp"
                     android:id="@+id/product"
@@ -126,7 +123,6 @@
                     android:text="-"
                     android:textColor="@color/white"
                     android:layout_margin="0.5dp"
-                    android:onClick="signchooser"
                     android:id="@+id/substract"
                     android:textSize="30sp"
                     android:layout_weight="1"/>
@@ -135,7 +131,6 @@
                     android:id="@+id/addition"
                     android:layout_margin="0.5dp"
                     android:textColor="@color/white"
-                    android:onClick="signchooser"
                     android:layout_height="match_parent"
                     android:text="+"
                     android:textSize="30sp"
@@ -145,7 +140,6 @@
                     android:layout_width="0dp"
                     android:id="@+id/division"
                     android:layout_margin="0.5dp"
-                    android:onClick="signchooser"
                     android:layout_height="match_parent"
                     android:text="/"
                     android:textSize="30sp"
